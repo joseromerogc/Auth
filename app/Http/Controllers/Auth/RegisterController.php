@@ -1,10 +1,10 @@
 <?php
 
-namespace mathmaster\Http\Controllers\Auth;
+namespace ViveAuth\Http\Controllers\Auth;
 
-use mathmaster\User;
+use ViveAuth\User;
 use Validator;
-use mathmaster\Http\Controllers\Controller;
+use ViveAuth\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
@@ -68,7 +68,8 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
 
-        $user->roles()->attach(3);
+        $user->roles()->attach(2); // NORMAL USER WITH ID 2. MAY IS REGISTERED IN DB
+
         return $user;
     }
 }

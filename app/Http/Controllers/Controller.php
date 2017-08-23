@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Http\Controllers;
+namespace ViveAuth\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

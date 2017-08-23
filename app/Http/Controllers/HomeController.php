@@ -1,10 +1,10 @@
 <?php
 
-namespace mathmaster\Http\Controllers;
+namespace ViveAuth\Http\Controllers;
 
 use Illuminate\Http\Request;
-use mathmaster\User;
-use mathmaster\App\Role;
+use ViveAuth\User;
+use ViveAuth\App\Role;
 use Laratrust;
 
 class HomeController extends Controller

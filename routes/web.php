@@ -9,6 +9,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+use ViveAuth\User;
 
 Auth::routes();
 
@@ -34,6 +35,16 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/home', 'HomeController@index');
 	Route::get('/perfil/edit', 'Perfil\PerfilController@edit');
 	Route::resource('perfil', 'Perfil\PerfilController');
-	Route::post('/perfil/update', 'Perfil\PerfilController@update');
-	
+	Route::post('/perfil/update', 'Perfil\PerfilController@update');	
+});
+
+Route::get('/user/{column}/{v?}',function($column,$v){
+	if($column=="email"){
+    	$user = User::where('email',$v)->first();
+    }
+    else{
+    	$user = User::find($v);
+    }
+
+    return Response::json($user);
 });

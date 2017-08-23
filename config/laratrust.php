@@ -19,7 +19,7 @@ return [
     | the role if it is in a different namespace.
     |
     */
-    'role' => 'mathmaster\App\Role',
+    'role' => 'ViveAuth\App\Role',
 
     /*
     |--------------------------------------------------------------------------
@@ -40,7 +40,7 @@ return [
     | Update the permission if it is in a different namespace.
     |
     */
-    'permission' => 'mathmaster\App\Permission',
+    'permission' => 'ViveAuth\App\Permission',
 
     /*
     |--------------------------------------------------------------------------

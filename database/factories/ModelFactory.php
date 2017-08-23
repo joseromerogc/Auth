@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(mathmaster\User::class, function (Faker\Generator $faker) {
+$factory->define(ViveAuth\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [

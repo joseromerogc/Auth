@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Perfil;
+namespace ViveAuth\Perfil;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -24,11 +24,11 @@ class Perfil extends Model
      */
     public function user()
     {
-        return $this->belongsTo('mathmaster\User');
+        return $this->belongsTo('ViveAuth\User');
 
     }
     public function country()
     {
-        return $this->belongsTo('mathmaster\Perfil\Country');
+        return $this->belongsTo('ViveAuth\Perfil\Country');
     }
 }

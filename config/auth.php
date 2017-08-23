@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => mathmaster\User::class,
+            'model' => ViveAuth\User::class,
         ],
 
         // 'users' => [

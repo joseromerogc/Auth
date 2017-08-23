@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster;
+namespace ViveAuth;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

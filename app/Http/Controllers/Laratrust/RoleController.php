@@ -1,13 +1,13 @@
 <?php
 
-namespace mathmaster\Http\Controllers\Laratrust;
+namespace ViveAuth\Http\Controllers\Laratrust;
 
 use Illuminate\Http\Request;
-use mathmaster\Http\Controllers\Controller;
-use mathmaster\App\Role;
-use mathmaster\User;
+use ViveAuth\Http\Controllers\Controller;
+use ViveAuth\App\Role;
+use ViveAuth\User;
 use Illuminate\Support\Facades\Redirect;
-use mathmaster\Http\Requests\Usuario\RoleFormRequest;
+use ViveAuth\Http\Requests\Usuario\RoleFormRequest;
 use Illuminate\Support\Facades\Input;
 use Laratrust\Traits\LaratrustUserTrait;
 use DB;

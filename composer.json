@@ -22,7 +22,7 @@
             "database"
         ],
         "psr-4": {
-            "mathmaster\\": "app/"
+            "ViveAuth\\": "app/"
         }
     },
     "autoload-dev": {

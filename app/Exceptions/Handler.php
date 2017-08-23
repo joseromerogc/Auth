@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Exceptions;
+namespace ViveAuth\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

@@ -2,59 +2,60 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathSolver @yield('titulo')</title>
-    <!-- Core CSS - Include with every page -->
-    <link href="{{asset('plugins/bootstrap/bootstrap.css')}}" rel="stylesheet" />
-    <link href="{{asset('font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
-    <link href="{{asset('plugins/pace/pace-theme-big-counter.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/style.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/main-style.css')}}" rel="stylesheet" />
+    @include('layouts.head')
     @yield('head')
 </head>
 
-<body>
-    
-    
-    <!--  wrapper -->
-    <div id="wrapper">
-
-        <!-- navbar top -->
-        @include('headers.nav')
-        <!-- end navbar top -->
-
-        <!-- navbar side -->
-        @include('sidebars.sidebar')
-        <!-- end navbar side -->
-        
-        <!--  page-wrapper -->
-
-        <div id="page-wrapper">
-
-            <div class="row">
-                <!-- Page Header -->
-                @include('headers.page')
-                <!--End Page Header -->
-
-                @yield('contenido')
-            </div>
-
-        </div>
-        <!-- end page-wrapper -->
-
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
     </div>
-    <!-- end wrapper -->
-
-    <!-- Core Scripts - Include with every page -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
-    <script src="{{asset('plugins/metisMenu/jquery.metisMenu.js')}}"></script>
-    <script src="{{asset('plugins/pace/pace.js')}}"></script>
-    <script src="{{asset('scripts/siminta.js')}}"></script>
-    @yield('script')
-
-
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        @include('headers.topbar')
+        @include('sidebars.left')
+        
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper">
+            @include('layouts.content')    
+        </div>
+            @include('layouts.footer')    
+        @include('layouts.javascript')    
+    </div>
 </body>
+
+<script type="text/javascript">
+     $(document).ready(function () {
+     "use strict";
+
+@foreach (['danger', 'warning', 'success', 'info'] as $msg)
+    @if(Session::has('alert-' . $msg))
+
+    
+     // toat popup js
+     $.toast({
+         heading: 'Message',
+         text: "{{ Session::get('alert-' . $msg) }}",
+         position: 'top-right',
+         loaderBg: '#fff',
+         icon: '{{ $msg }}',
+         hideAfter: 6500,
+         stack: 6
+     });
+ 
+    @endif
+@endforeach
+
+});
+</script>
 
 </html>

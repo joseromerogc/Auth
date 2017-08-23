@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Perfil;
+namespace ViveAuth\Perfil;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -9,6 +9,6 @@ class Country extends Model
     
     public function users()
     {
-        return $this->hasMany('mathmaster\User');
+        return $this->hasMany('ViveAuth\User');
     }
 }

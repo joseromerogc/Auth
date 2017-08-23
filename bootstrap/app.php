@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    mathmaster\Http\Kernel::class
+    ViveAuth\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    mathmaster\Console\Kernel::class
+    ViveAuth\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    mathmaster\Exceptions\Handler::class
+    ViveAuth\Exceptions\Handler::class
 );
 
 /*

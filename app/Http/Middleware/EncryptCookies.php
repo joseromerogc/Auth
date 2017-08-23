@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Http\Middleware;
+namespace ViveAuth\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

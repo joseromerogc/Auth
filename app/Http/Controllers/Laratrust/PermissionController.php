@@ -1,13 +1,13 @@
 <?php
 
-namespace mathmaster\Http\Controllers\Laratrust;
+namespace ViveAuth\Http\Controllers\Laratrust;
 
 use Illuminate\Http\Request;
-use mathmaster\Http\Controllers\Controller;
-use mathmaster\App\Permission;
-use mathmaster\App\Role;
+use ViveAuth\Http\Controllers\Controller;
+use ViveAuth\App\Permission;
+use ViveAuth\App\Role;
 use Illuminate\Support\Facades\Redirect;
-use mathmaster\Http\Requests\Usuario\PermissionFormRequest;
+use ViveAuth\Http\Requests\Usuario\PermissionFormRequest;
 use Illuminate\Support\Facades\Input;
 use DB;
 

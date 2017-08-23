@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Http\Requests\Usuario;
+namespace ViveAuth\Http\Requests\Usuario;
 
 use Illuminate\Foundation\Http\FormRequest;
 

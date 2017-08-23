@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'mathmaster',
+    'name' => 'ViveAuth',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     |
     */
 
-    'locale' => 'es',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        mathmaster\Providers\AppServiceProvider::class,
-        mathmaster\Providers\AuthServiceProvider::class,
-        // mathmaster\Providers\BroadcastServiceProvider::class,
-        mathmaster\Providers\EventServiceProvider::class,
-        mathmaster\Providers\RouteServiceProvider::class,
+        ViveAuth\Providers\AppServiceProvider::class,
+        ViveAuth\Providers\AuthServiceProvider::class,
+        // ViveAuth\Providers\BroadcastServiceProvider::class,
+        ViveAuth\Providers\EventServiceProvider::class,
+        ViveAuth\Providers\RouteServiceProvider::class,
         /*
          * Agregadas Nuevas
          */

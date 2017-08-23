@@ -1,12 +1,12 @@
 <?php
 
-namespace mathmaster\Http\Controllers\Perfil;
+namespace ViveAuth\Http\Controllers\Perfil;
 
 use Illuminate\Http\Request;
-use mathmaster\Http\Controllers\Controller;
+use ViveAuth\Http\Controllers\Controller;
 use Laratrust;
-use mathmaster\Perfil\Perfil;
-use mathmaster\Http\Requests\Usuario\PerfilFormRequest;
+use ViveAuth\Perfil\Perfil;
+use ViveAuth\Http\Requests\Usuario\PerfilFormRequest;
 use Illuminate\Support\Facades\Redirect;
 use DB;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Providers;
+namespace ViveAuth\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

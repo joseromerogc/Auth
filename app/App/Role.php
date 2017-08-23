@@ -1,5 +1,5 @@
 <?php
-namespace mathmaster\App;
+namespace ViveAuth\App;
 
 use Laratrust\LaratrustRole;
 

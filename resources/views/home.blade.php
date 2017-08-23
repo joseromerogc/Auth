@@ -1,18 +1,20 @@
 @extends('layouts.admin')
 
-@section('encabezado')
-Bienvenid@
+@section('title')
+Home | SiteName
 @endsection
 
-@section('contenido')
+@section('title-page')
+Dashboard |
+@endsection
 
-<div class="row">
-                <!--quick info section -->
-                <div class="col-lg-3">
-                    <div class="alert alert-danger text-center">
-                        <i class="fa fa-user fa-3x"></i>&nbsp;<b></b>Meetings Sheduled This Month
-                    </div>
-                </div>
-</div>
+
+@section('breadcrumb')
+<ol class="breadcrumb">
+                            <li><a href="#">@yield('title-page')</a></li>
+</ol>
+@endsection
+
+@section('content')
 
 @endsection

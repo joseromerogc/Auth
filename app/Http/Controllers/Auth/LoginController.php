@@ -1,8 +1,8 @@
 <?php
 
-namespace mathmaster\Http\Controllers\Auth;
+namespace ViveAuth\Http\Controllers\Auth;
 
-use mathmaster\Http\Controllers\Controller;
+use ViveAuth\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller

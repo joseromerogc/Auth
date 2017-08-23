@@ -1,6 +1,6 @@
 <?php
 
-namespace mathmaster\Providers;
+namespace ViveAuth\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'mathmaster\Events\SomeEvent' => [
-            'mathmaster\Listeners\EventListener',
+        'ViveAuth\Events\SomeEvent' => [
+            'ViveAuth\Listeners\EventListener',
         ],
     ];
 
